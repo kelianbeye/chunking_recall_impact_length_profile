@@ -1,11 +1,11 @@
-# tts_jd409
+# chunking_recall_impact_length_profile
 
 **统计语音合成工程师·分块策略对召回的影响各部分的长度占比并标出异常。**
 
-`tts_jd409` —— 按段落统计语音合成工程师·分块策略对召回的影响相关的长度分布，标出过长、过短与重复表达的部分
+`chunking_recall_impact_length_profile` —— 按段落统计语音合成工程师·分块策略对召回的影响相关的长度分布，标出过长、过短与重复表达的部分
 
 - 零依赖，Python 3.10+ 标准库即可运行
-- 单文件，`tts_jd409.py` 拷走就能用
+- 单文件，`chunking_recall_impact_length_profile.py` 拷走就能用
 - 不联网、不写文件
 
 ## 对应的岗位
@@ -23,16 +23,16 @@
 零依赖，Python 3.10+ 即可：
 
 ```bash
-pip install kelianbeye-tts_jd409
+pip install kelianbeye-chunking_recall_impact_length_profile
 ```
 
 装完直接用命令名调用：
 
 ```bash
-tts_jd409 --help
+chunking_recall_impact_length_profile --help
 ```
 
-也可以不用安装，直接把 `tts_jd409.py` 拷走用——它只依赖标准库。
+也可以不用安装，直接把 `chunking_recall_impact_length_profile.py` 拷走用——它只依赖标准库。
 
 ## 为什么需要它
 
@@ -47,9 +47,9 @@ tts_jd409 --help
 ## 用法
 
 ```bash
-python tts_jd409.py --file input.txt
-python tts_jd409.py --text "示例内容"
-python tts_jd409.py --file input.txt --json
+python chunking_recall_impact_length_profile.py --file input.txt
+python chunking_recall_impact_length_profile.py --text "示例内容"
+python chunking_recall_impact_length_profile.py --file input.txt --json
 ```
 
 加 `--json` 可以拿到机器可读的结果，便于接到流水线里。
@@ -62,7 +62,7 @@ python tts_jd409.py --file input.txt --json
 ## 跑测试
 
 ```bash
-python test_tts_jd409.py
+python test_chunking_recall_impact_length_profile.py
 ```
 
 测试用独立的断言与临时数据，不污染工作目录。
@@ -70,7 +70,7 @@ python test_tts_jd409.py
 ## 来源与参考
 
 - Python 标准库文档：<https://docs.python.org/3/>
-- GitHub 仓库：<https://github.com/kelianbeye/tts_jd409>
+- GitHub 仓库：<https://github.com/kelianbeye/chunking_recall_impact_length_profile>
 
 ---
 
@@ -79,7 +79,7 @@ python test_tts_jd409.py
 kelianbeye 做语音合成工程师·分块策略对召回的影响相关的问题，方向对标华为的实习语音合成工程师岗位。这个工具先替你回答一个具体问题，再谈别的。
 
 - 个人主页：<https://kelianbeye.github.io>
-- 仓库：<https://github.com/kelianbeye/tts_jd409>
+- 仓库：<https://github.com/kelianbeye/chunking_recall_impact_length_profile>
 
 ## 许可
 
